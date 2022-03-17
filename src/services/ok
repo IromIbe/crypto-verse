@@ -1,12 +1,14 @@
 import React from "react";
-import { useGetCryptosQuery } from "../../services/cryptoApi";
 import millify from "millify";
 import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
-import Cryptocurrencies from "../cryptocurrencies/Cryptocurrencies";
-import News from "../news/News";
-import Loader from "../loader";
+import { useGetCryptosQuery } from "../services/cryptoAPI";
+import Loader from "./Loader";
+import { Cryptocurrencies, News } from "../components";
 const { Title } = Typography;
+
+// import millify from 'millify';
+
 const Homepage = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;

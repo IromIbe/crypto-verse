@@ -54,7 +54,7 @@ const News = ({ simplified }) => {
                       maxHeight: "100px",
                     }}
                     src={news?.image?.thumbnail?.contentUrl || demoImage}
-                    alt=""
+                    alt="news"
                   />
                 </div>
                 <p>
