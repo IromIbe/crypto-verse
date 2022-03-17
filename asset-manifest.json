@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/crypto-verse/static/css/main.254f9a97.css",
+    "main.js": "/crypto-verse/static/js/main.7111b8e3.js",
+    "static/js/787.19d8e038.chunk.js": "/crypto-verse/static/js/787.19d8e038.chunk.js",
+    "static/media/cryptocurrency.png": "/crypto-verse/static/media/cryptocurrency.1548aced3f0605895bac.png",
+    "index.html": "/crypto-verse/index.html",
+    "main.254f9a97.css.map": "/crypto-verse/static/css/main.254f9a97.css.map",
+    "main.7111b8e3.js.map": "/crypto-verse/static/js/main.7111b8e3.js.map",
+    "787.19d8e038.chunk.js.map": "/crypto-verse/static/js/787.19d8e038.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.254f9a97.css",
+    "static/js/main.7111b8e3.js"
+  ]
+}
