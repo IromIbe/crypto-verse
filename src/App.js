@@ -8,7 +8,7 @@ import Exchanges from "./component/exchange/Exchanges";
 import CryptoDetails from "./component/cryptoDetails/CryptoDetails";
 import News from "./component/news/News";
 
-// console.log(process.env.REACT_APP_RAPIDAPI_KEY, "fgfgbdvc");
+console.log(process.env.REACT_APP_RAPIDAPI_KEY, "fgfgbdvc");
 function App() {
   return (
     <div className="app">

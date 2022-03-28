@@ -11,7 +11,7 @@ const demoImage =
   "https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";
 
 const News = ({ simplified }) => {
-  const [newsCategory, setNewsCategory] = useState("cryptocurrency");
+  const [setNewsCategory] = useState("cryptocurrency");
   const { data } = useGetCryptosQuery(100);
   const { data: cryptoNews } = useGetCryptoNewsQuery({
     newsCategory: "cryptocurrency",

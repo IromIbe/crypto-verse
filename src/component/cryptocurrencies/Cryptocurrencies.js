@@ -6,7 +6,7 @@ import { useGetCryptosQuery } from "../../services/cryptoApi";
 import Loader from "../loader";
 
 const Cryptocurrencies = ({ simplified }) => {
-  const count = simplified ? 10 : 85;
+  const count = simplified ? 10 : 80;
   const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
   const [cryptos, setCryptos] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");

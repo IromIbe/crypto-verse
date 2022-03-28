@@ -1,6 +1,6 @@
 import React from "react";
 // import millify from "millify";
-import { Collapse, Row, Col } from "antd";
+// import { Row, Col } from "antd";
 // import HTMLReactParser from "html-react-parser";
 
 import { useGetExchangesQuery } from "../../services/cryptoApi";
@@ -11,7 +11,7 @@ import Loader from "../loader";
 
 const Exchanges = () => {
   const { data, isFetching } = useGetExchangesQuery();
-  const exchangesList = data?.data?.exchanges;
+  // const exchangesList = data?.data?.exchanges;
   if (isFetching) return <Loader />;
 
   return (
