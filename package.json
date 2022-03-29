@@ -1,5 +1,6 @@
 {
   "name": "crypto-verse",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
