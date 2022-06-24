@@ -1,6 +1,6 @@
 {
   "name": "crypto-verse",
-  "homepage": ".",
+  "homepage": "https://crypto-verse-tyler.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
