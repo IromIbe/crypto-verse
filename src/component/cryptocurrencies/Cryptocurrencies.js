@@ -13,30 +13,34 @@ const Cryptocurrencies = ({ simplified }) => {
 
   useEffect(() => {
     setCryptos(cryptosList?.data?.coins);
+  }, [cryptosList]);
+
+  useEffect(() => {
     const filteredData = cryptosList?.data?.coins.filter((coin) =>
       coin.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setCryptos(filteredData);
-  }, [cryptosList, searchTerm]);
+  }, [searchTerm]);
   if (isFetching) return <Loader />;
+
   return (
     <>
       {!simplified && (
-        <div className="search-crypto">
+        <div className='search-crypto'>
           <Input
-            placeholder="Search Cryptocurrency"
+            placeholder='Search Cryptocurrency'
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
       )}
 
-      <Row gutter={[32, 32]} className="crypto-card-container">
+      <Row gutter={[32, 32]} className='crypto-card-container'>
         {cryptos?.map((currency) => (
           <Col
             xs={24}
             sm={12}
             lg={6}
-            className="crypto-card"
+            className='crypto-card'
             key={currency?.id}
           >
             <Link key={currency.uuid} to={`/crypto/${currency.uuid}`}>
@@ -44,9 +48,9 @@ const Cryptocurrencies = ({ simplified }) => {
                 title={`${currency.rank}. ${currency.name}`}
                 extra={
                   <img
-                    className="crypto-image"
+                    className='crypto-image'
                     src={currency?.iconUrl}
-                    alt="crypto-img"
+                    alt='crypto-img'
                   />
                 }
                 hoverable
