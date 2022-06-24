@@ -29,11 +29,11 @@ const Homepage = () => {
           <Col span={12}>
             <Statistic
               title='Total Exchanges'
-              value={millify(globalStats?.totalExchanges)}
+              value={globalStats?.totalExchanges}
             />
           </Col>
         )}
-        {millify(globalStats?.totalMarketCap) && (
+        {globalStats?.totalMarketCap && (
           <Col span={12}>
             <Statistic
               title='Total Market Cap'
@@ -41,7 +41,7 @@ const Homepage = () => {
             />
           </Col>
         )}
-        {millify(globalStats?.total24hVolume) && (
+        {globalStats?.total24hVolume && (
           <Col span={12}>
             <Statistic
               title='Total 24th Volume'
@@ -49,7 +49,7 @@ const Homepage = () => {
             />
           </Col>
         )}
-        {millify(globalStats?.totalMarkets) && (
+        {globalStats?.totalMarkets && (
           <Col span={12}>
             <Statistic
               title='Total Markets'
